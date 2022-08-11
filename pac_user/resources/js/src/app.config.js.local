@@ -1,0 +1,131 @@
+import themeConfig from "../themeConfig";
+let PORTAL_SCREEN_ID = 67;
+let HR_SCREEN_ID = 68;
+let FORM_ISSUANCE_SCREEN_ID = 73;
+let FAQ_BBS_SCREEN_ID = 83;
+const config = {
+
+    LOG_AUTH_FLG: 1,
+    LOG_TOKEN_NAME: '',
+    OPERATION_MESSAGE: {
+        'r01-display': [56,107,'新規作成画面の表示に成功しました。','新規作成画面の表示に失敗しました。'],
+        'r01-upload': [56,108,'「:filename」をアップロードしました。','「:filename」をアップロードできませんでした。'],
+        'r01-download': [68,175,'「:filename」をダウンロードしました。','「:filename」をダウンロードできませんでした。'],
+        'r9-14-download': [68,175,'「:filename」をダウンロードしました。','「:filename」をダウンロードできませんでした。'],
+        'r01-tmp-save': [56,114,'文書の保存に成功しました。回覧ID：:circular_id','文書の保存に失敗しました。回覧ID：:circular_id'],
+        'r04-resume': [59,128,'文書を再開しました。回覧ID：:circular_id','文書を再開できませんでした。回覧ID：:circular_id'],
+        'r04-delete': [59,129,':filename を削除しました。回覧ID：:circular_id',':filename を削除できませんでした。回覧ID：:circular_id'],
+        'r06-display': [61,136,'設定画面の表示に成功しました。','設定画面の表示に失敗しました。'],
+        'r08-display': [62,141,'文書申請画面の表示に成功しました。','文書申請画面の表示に失敗しました。'],
+        'r08-display-contacts': [62,142,'アドレス帳の表示に成功しました。','アドレス帳の表示に失敗しました。'],
+        'r9-14-display': [63,144,'回覧文書申請画面の表示に成功しました。','回覧文書申請画面の表示に失敗しました。'],
+        'r11-display': [64,150,'回覧先設定画面の表示に成功しました。','回覧先設定画面の表示に失敗しました。'],
+
+        'r06-06-setting-update-profile-image': [61, 174,'プロファイル画像の変更に成功しました。','プロファイル画像の変更に失敗しました。'],
+        'pr1-01-portal-display-screen': [PORTAL_SCREEN_ID,158,'ポータル画面の表示に成功しました。','ポータル画面の表示に失敗しました。'],
+        'pr1-02-portal-mypage-setting-display': [PORTAL_SCREEN_ID, 159,'ポータル - マイページ設定画面の表示に成功しました。マイページID: :mypage_id','ポータル - マイページ設定画面の表示に失敗しました。マイページID：:mypage_id'],
+        'pr1-03-portal-mypage-save-setting': [PORTAL_SCREEN_ID, 160,'ポータル - マイページ設定の保存に成功しました。マイページID：:mypage_id 、表示アプリ：[:display_app]','ポータル - マイページ設定の保存に失敗しました。マイページID：:mypage_id 、表示アプリ：[:display_app]'],
+        'pr1-06-portal-hide-favorite': [PORTAL_SCREEN_ID, 163,'ポータル - お気に入りの非表示に成功しました。','ポータル - お気に入りの非表示に失敗しました。'],
+        'pr1-07-portal-hide-shachihata-cloud': [PORTAL_SCREEN_ID, 164,'ポータル - シヤチハタクラウドの非表示に成功しました。','ポータル - シヤチハタクラウドの非表示に失敗しました。'],
+        'pr1-08-portal-hide-bulletin-board': [PORTAL_SCREEN_ID, 165,'ポータル - 掲示板の非表示に成功しました。','ポータル - 掲示板の非表示に失敗しました。'],
+        'pr1-09-portal-hide-calendar': [PORTAL_SCREEN_ID, 166,'ポータル - スケジューラの非表示に成功しました。','ポータル - スケジューラの非表示に失敗しました。'],
+        'pr1-10-portal-single-bulletin-board': [PORTAL_SCREEN_ID, 167,'掲示板の表示に成功しました。','掲示板の表示に失敗しました。'],
+        'pr1-11-portal-single-calendar-board': [PORTAL_SCREEN_ID, 168,'スケジューラの表示に成功しました。','スケジューラの表示に失敗しました。'],
+        'pr1-12-portal-notice-screen': [PORTAL_SCREEN_ID, 169,'お知らせの表示に成功しました。','お知らせの表示に失敗しました。'],
+        'pr1-13-portal-read-all-notice': [PORTAL_SCREEN_ID, 170,'お知らせをすべて既読にすることに成功しました。','お知らせをすべて既読にすることに失敗しました。'],
+        'pr1-14-portal-setting-personal': [PORTAL_SCREEN_ID, 171,'個人設定の表示に成功しました。','個人設定の表示に失敗しました。'],
+        'pr1-15-portal-setting-mygroup': [PORTAL_SCREEN_ID, 172,'マイグループ設定の表示に成功しました。','マイグループ設定の表示に失敗しました。'],
+        'pr1-16-portal-setting-notification': [PORTAL_SCREEN_ID, 173,'通知設定の表示に成功しました。','通知設定の表示に失敗しました。'],
+        'pr1-17-portal-hide-shachihata-special': [PORTAL_SCREEN_ID, 174,'ポータル - 受取連携会社一覧の非表示に成功しました。','ポータル - 受取連携会社一覧の非表示に失敗しました。'],
+        'pr1-17-portal-hide-time-card': [PORTAL_SCREEN_ID, 176,'ポータル - タイムカードの非表示に成功しました。','ポータル - タイムカードの非表示に失敗しました。'],
+        'pr1-18-portal-single-disk-mail-file': [PORTAL_SCREEN_ID, 343,'ファイルメール便の表示に成功しました。','ファイルメール便の表示に失敗しました。'],
+        'pr1-19-portal-single-faq-bulletin-board': [FAQ_BBS_SCREEN_ID, 382,'サポート掲示板の表示に成功しました。','サポート掲示板の表示に失敗しました。'],
+        'pr1-20-portal-hide-faq-bulletin-board': [FAQ_BBS_SCREEN_ID, 381,'ポータル - サポート掲示板の非表示に成功しました。','ポータル - サポート掲示板の非表示に失敗しました。'],
+        'pr1-21-portal-hide-receive-plan': [PORTAL_SCREEN_ID, 401,'受信専用プランの非表示に成功しました。','受信専用プランの非表示に失敗しました。'],
+        'pr1-22-portal-single-receive-plan': [PORTAL_SCREEN_ID, 402,'受信専用プランの表示に成功しました。','受信専用プランの表示に失敗しました。'],
+        'pr1-23-portal-hide-to-do-list': [PORTAL_SCREEN_ID, 403,'ToDoリストの非表示に成功しました。','Todoリストの非表示に失敗しました。'],
+        'pr1-24-portal-single-to-do-list': [PORTAL_SCREEN_ID, 404,'ToDoリストの表示に成功しました。','ToDoリストの表示に成功しました。'],
+        
+        'hr-work-detail-open-export-csv': [HR_SCREEN_ID, 192, '勤務情報CSV出力ダイアログの表示に成功しました。', '勤務情報CSV出力ダイアログの表示に失敗しました。'],
+        'hr-work-detail-open-ajust-hours': [HR_SCREEN_ID, 333, '勤務時間の端数調整ダイアログの表示に成功しました。', '勤務時間の端数調整ダイアログの表示に失敗しました。'],
+        'hr-work-detail-access-screen': [HR_SCREEN_ID, 189, '勤務詳細画面の表示に成功しました。', '勤務詳細画面の表示に失敗しました。'],
+        'hr-work-detail-change-work-date': [HR_SCREEN_ID, 190, '勤務詳細情報の表示に成功しました。', '勤務詳細情報の表示に失敗しました。'],
+        
+        //'hr-user-work-status-list-screen': [HR_SCREEN_ID, 358, '勤務状況確認の表示に成功しました。', '勤務状況確認の表示に失敗しました。'],
+
+        'hr-user-work-status-list-screen': [HR_SCREEN_ID, 400, '勤務状況確認の表示に成功しました。', '勤務状況確認の表示に失敗しました。'],
+
+        // 1203
+        'addr-display': [60,131,'アドレス帳の表示に成功しました。','アドレス帳の表示に失敗しました。'],
+        'received-display': [57,115,'受信一覧の検索結果の表示に成功しました。','受信一覧の検索結果の表示に失敗しました。'],
+        'sent-display': [58,118,'送信一覧の検索結果の表示に成功しました。','送信一覧の検索結果の表示に失敗しました。'],
+        'saved-display': [59,126,'下書き一覧の検索結果の表示に成功しました。','下書き一覧の検索結果の表示に失敗しました。'],
+        'r06-update-display': [61,137,'表示設定更新に成功しました。','表示設定更新に失敗しました。'],
+        'r06-update-comment': [61,138,'コメント設定更新に成功しました。','コメント設定更新に失敗しました。'],
+        'r06-update-mail': [61,139,'メール受信設定更新に成功しました。','メール受信設定更新に失敗しました。'],
+
+        'frm3-form-issuance-setting-display': [FORM_ISSUANCE_SCREEN_ID, 303, '明細テンプレート設定画面の表示に成功しました。', '明細テンプレート設定画面の表示に失敗しました。'],
+        'frm4-form-issuance-create-display': [FORM_ISSUANCE_SCREEN_ID, 305, '明細の作成画面の表示に成功しました。', '明細の作成画面の表示に失敗しました。'],
+        'frm5-form-issuance-form-list-display': [FORM_ISSUANCE_SCREEN_ID, 307, '明細一覧画面の表示に成功しました。', '明細一覧画面の表示に失敗しました。'],
+        'frm6-15-form-issuance-import-display': [FORM_ISSUANCE_SCREEN_ID, 321, '明細インポート画面の表示に成功しました。', '明細インポート画面の表示に失敗しました。'],
+
+        // 掲示板 PAC_5-1824
+        'portal-bulletin-search-topic': [82, 366, '掲示板の投稿の検索に成功しました。', '掲示板の投稿の検索に失敗しました。'],
+
+        // PAC_5-2866
+        'hr-user-work-list-access-screen': [28,412,'勤務表一何画面の表示に成功しました。','勤務表一何画面の表示に失敗しました。'],
+        'hr-user-work-list-search': [28,413,'検索が成功しました。', '検索が失敗しました。'],
+        'hr-user-work-list-bulk-approval': [28,414,'一括承認が成功しました。','一括承認が失敗しました。'],
+        'hr-user-work-list-detail': [28,415,'詳細表示が成功しました。','詳細表示が失敗しました。'],
+        'hr-user-work-detail-access-screen': [88,416,'ユーザ勤務詳細画面の表示に成功しました。','ユーザ勤務詳細画面の表示に失敗しました。'],
+        'hr-user-work-detail-open-export-csv': [88, 417, '勤務情報CSV出力ダイアログの表示に成功しました。', '勤務情報CSV出力ダイアログの表示に失敗しました。'],
+        'hr-user-work-detail-approval': [88,418,'一括承認が成功しました。','一括承認が失敗しました。'],
+        // ファイルメール便 PAC_5-3237
+        'mail-file-send-display': [95, 504, 'ファイルメール便の送信に成功しました。<br>ファイル名：[:file_name]<br>送信先のメールアドレス：[:email]', 'ファイルメール便の送信に失敗しました。<br>ファイル名：[:file_name]<br>送信先のメールアドレス：[:email]'],
+        // サポート掲示板
+        'portal-topic-add-faq-bbs': [FAQ_BBS_SCREEN_ID, 508,'サポート掲示板の投稿の作成に成功されました。','サポート掲示板の投稿の作成に失敗されました。'],
+        'portal-topic-update-faq-bbs': [FAQ_BBS_SCREEN_ID, 509,'サポート掲示板の投稿の更新に成功されました。','サポート掲示板の投稿の更新に失敗されました。'],
+        'portal-topic-del-faq-bbs': [FAQ_BBS_SCREEN_ID, 510,'サポート掲示板の投稿の削除に成功されました。','サポート掲示板の投稿の削除に失敗されました。'],
+        'portal-comment-add-faq-bbs': [FAQ_BBS_SCREEN_ID, 511,'サポート掲示板のコメントの追加に成功されました。','サポート掲示板のコメントの追加に失敗されました。'],
+        'portal-comment-update-faq-bbs': [FAQ_BBS_SCREEN_ID, 512,'サポート掲示板のコメントの更新に成功されました。','サポート掲示板のコメントの更新に失敗されました。'],
+        'portal-comment-del-faq-bbs': [FAQ_BBS_SCREEN_ID, 513,'サポート掲示板のコメントの削除に成功されました。','サポート掲示板のコメントの削除に失敗されました。'],
+        'portal-faq-bbs-search-topic': [FAQ_BBS_SCREEN_ID, 524, 'サポート掲示板の投稿の検索に成功しました。', 'サポート掲示板の投稿の検索に失敗しました。'],
+
+        // ToDoリスト
+        'portal-personal-add-to-do-list': [98, 514, 'ToDoリストの個人リストの追加に成功しました。', 'ToDoリストの個人リストの追加に失敗しました。'],
+        'portal-personal-update-to-do-list': [98, 515, 'ToDoリストの個人リストの更新に成功しました。', 'ToDoリストの個人リストの更新に失敗しました。'],
+        'portal-personal-del-to-do-list': [98, 516, 'ToDoリストの個人リストの削除に成功しました。', 'ToDoリストの個人リストの削除に失敗しました。'],
+        'portal-public-add-to-do-list': [98, 517, 'ToDoリストの共有リストの追加に成功しました。', 'ToDoリストの共有リストの追加に失敗しました。'],
+        'portal-public-update-to-do-list': [98, 518, 'ToDoリストの共有リストの更新に成功しました。', 'ToDoリストの共有リストの更新に失敗しました。'],
+        'portal-public-del-to-do-list': [98, 519, 'ToDoリストの共有リストの削除に成功しました。', 'ToDoリストの共有リストの削除に失敗しました。'],
+        'portal-personal-add-to-do-task': [98, 405, 'ToDoリストの個人タスクの追加に成功しました。', 'ToDoリストの個人タスクの追加に失敗しました。'],
+        'portal-personal-update-to-do-task': [98, 406, 'ToDoリストの個人タスクの更新に成功しました。', 'ToDoリストの個人タスクの更新に失敗しました。'],
+        'portal-personal-del-to-do-task': [98, 407, 'ToDoリストの個人タスクの削除に成功しました。', 'ToDoリストの個人タスクの削除に失敗しました。'],
+        'portal-public-add-to-do-task': [98, 408, 'ToDoリストの共有タスクの追加に成功しました。', 'ToDoリストの共有タスクの追加に失敗しました。'],
+        'portal-public-update-to-do-task': [98, 409, 'ToDoリストの共有タスクの更新に成功しました。', 'ToDoリストの共有タスクの更新に失敗しました。'],
+        'portal-public-del-to-do-task': [98, 410, 'ToDoリストの共有タスクの削除に成功しました。', 'ToDoリストの共有タスクの削除に失敗しました。'],
+        'portal-received-update-to-do-task': [98, 411, 'ToDoリストの受信一覧タスクの更新に成功しました 。', 'ToDoリストの受信一覧タスクの更新に失敗しました。'],
+        'portal-add-to-do-group': [98, 520, 'ToDoリストのグループの追加に成功しました。', 'ToDoリストのグループの追加に失敗しました。'],
+        'portal-update-to-do-group': [98, 521, 'ToDoリストのグループの更新に成功しました。', 'ToDoリストのグループの更新に失敗しました。'],
+        'portal-del-to-do-group': [98, 522, 'ToDoリストのグループの削除に成功しました。', 'ToDoリストのグループの削除に失敗しました。'],
+        'portal-update-to-do-notice-config': [98, 523, 'ToDoリストの通知設定を更新成功しました。', 'ToDoリストの通知設定を更新失敗しました。'],
+    },
+
+    /* staging */
+    APP_SERVER_ENV:0,
+    APP_EDITION_FLV:1,
+    APP_SERVER_FLG:1,
+
+    BASE_API_URL: 'https://app1.shachihata.com/app-api/api/v1',
+    LOCAL_API_URL: 'https://app1.shachihata.com/app',
+    ADMIN_API_URL:'https://app1.shachihata.com/admin',
+    GROUPWARE_API_URL: ' https://gw1-api.dstmp.com/api/v1', //API groupware
+    GROUPWARE_URL: 'https://gw1.dstmp.com', //link iframe groupware
+    GROUPWARE_DOMAIN: '.dstmp.com', //domain groupware
+
+    AWS_API_URL:'https://app1.shachihata.com/app',
+    K5_API_URL:'https://appk5a.shachihata.com/app',
+    OLD_AWS_API_URL: 'https://estamp.shachihata.co.jp/app',
+
+}
+export default config

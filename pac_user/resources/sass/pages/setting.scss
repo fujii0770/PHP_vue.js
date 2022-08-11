@@ -1,0 +1,35 @@
+#setting-page {
+    .tt-type {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .pl-50 {
+        padding-left: 16px;
+    }
+    label {
+        display: inline-block;
+        width: 89px;
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+#popup-profile-image {
+    .con-img-upload {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-upload img {
+        width: 100px;
+    }
+
+    .con-input-upload.disabled-upload {
+        display: none;
+    }
+
+    .style_img_profile {
+        max-width: 100%;
+        max-height: none;
+    }
+}

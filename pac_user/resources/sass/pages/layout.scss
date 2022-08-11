@@ -1,0 +1,290 @@
+.custome-event{
+  .vs-table--td{ position: relative; }
+  .event{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+}
+.show-flex{ 
+  display: flex;
+  .main-flex-item{
+      flex-grow: 1;
+  }
+}
+
+.width-50{ width: 50px; } .width-100{ width: 100px; } .width-150{ width: 150px; } .width-200{ width: 200px; } .width-250{ width: 250px; }
+.min-width-50{ min-width: 50px; } .min-width-100{ min-width: 100px; } .min-width-150{ min-width: 150px; } .min-width-200{ min-width: 200px; } .min-width-250{ min-width: 250px; }
+.max-width-50{ max-width: 50px; } .max-width-100{ max-width: 100px; } .max-width-150{ max-width: 150px; } .max-width-200{ max-width: 200px; }  .max-width-200{ max-width: 250px; white-space: normal;word-break: break-all; } .max-width-360{ max-width: 360px; white-space: normal;word-break: break-all; }
+.vs-popup-min-w-250 .vs-popup{ min-width: 250px } .vs-popup-min-w-300 .vs-popup{ min-width: 300px } 
+.bdt{ border-top: 1px solid #ccc; }
+@media screen and (min-width:991px)
+{
+  .text-right-lg{
+      text-align: right;
+  }
+}
+
+@media screen and (min-width:475px){ 
+  .vs-popup-w-250 .vs-popup{ width: 250px } .vs-popup-w-300 .vs-popup{ width: 300px } .vs-popup-w-350 .vs-popup{ width: 350px }  .vs-popup-w-400 .vs-popup{ width: 400px }
+  .vs-popup-w-p20 .vs-popup{ width: 20% } .vs-popup-w-p30 .vs-popup{ width: 30%x } .vs-popup-w-40 .vs-popup{ width: 40% } .vs-popup-w-50 .vs-popup{ width: 50% } 
+  .vs-popup-min-w-350 .vs-popup{ min-width: 350px }  .vs-popup-min-w-400 .vs-popup{ min-width: 400px }
+}
+.text-red{ color: red; }
+
+.input-group{
+  position: relative;
+  .vs-input--input{ padding-right: 55px; }
+  .icon{
+      position: absolute; right: 0; top: 0; 
+       .vs-icon{
+          background: #0984e3; color: #fff; border-radius: 0 5px 5px 0;
+          height: 37.5px; line-height: 37.5px; width: 50px; cursor: pointer;
+       }
+  }
+}
+
+/*PAC_5-1922 iphoneの仕様に対応*/
+input[type=text] ,select,textarea{
+  @media screen and (max-width: 600px) {
+  font-size: 16px;
+  transform: scale(0.8);
+  }
+}
+
+.sp-footer {
+  display: none;
+  @media screen and (max-width: 600px) {
+      display: none;/*PAC_5-1922 スマホにて小さくなるように　display: block;*/
+      position: fixed;
+      z-index: 998;
+      width: 100vw;
+      height: 9.6vw;
+      line-height: 9.6vw;
+      text-align: center;
+      background: #464646;
+      color: #fff;
+      font-size: 3.6vw;
+      left: 0;
+      bottom: 0;
+  }
+}
+body{
+  @media screen and (max-width: 600px) {
+      /*padding-bottom: 9.6vw;
+      padding-top: 20vw;*/
+      padding-bottom: 4.8vw;/*PAC_5-1922 スマホにて小さくなるように*/
+      padding-top: 6vw;/*PAC_5-1922 スマホにて小さくなるように*/
+  }
+}
+.vx-navbar-wrapper{
+  @media screen and (max-width: 600px) {
+      display: none !important;
+  }
+}
+.sp-navi{
+  display: none;
+  @media screen and (max-width: 600px) {
+      display: flex;
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      height: 10vw;/*PAC_5-1922 スマホにて小さくなるようにheight: 20vw;*/
+      width: 100vw;
+      background: #0984e3;
+      left: 0;
+      top: 0;
+      text-align: center;
+  }
+
+  .logo{
+      width: 28.4vw;/*PAC_5-1922 スマホにて小さくなるようにwidth: 38.4vw;*/ 
+  }
+
+  .sp-navi-btn{
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 10vw;/*PAC_5-1922 スマホにて小さくなるようにheight: 20vw;*/
+      width: 20vw;
+      z-index: 1000;
+
+      &:before{
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 8.8vw;
+          height: 2px;
+          background-color: #fff;
+          -webkit-transition: -webkit-transform 200ms ease-out 0ms;
+          transition: -webkit-transform 200ms ease-out 0ms;
+          transition: transform 200ms ease-out 0ms;
+          transition: transform 200ms ease-out 0ms, -webkit-transform 200ms ease-out 0ms;
+          -webkit-transform: translate(0, -1.6vw) rotate(0);
+          transform: translate(0, -1.6vw) rotate(0);
+      }
+
+      &:after{
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 8.8vw;
+          height: 2px;
+          background-color: #fff;
+          -webkit-transition: -webkit-transform 200ms ease-out 0ms;
+          transition: -webkit-transform 200ms ease-out 0ms;
+          transition: transform 200ms ease-out 0ms;
+          transition: transform 200ms ease-out 0ms, -webkit-transform 200ms ease-out 0ms;
+          -webkit-transform: translate(0, 1.6vw) rotate(0);
+          transform: translate(0, 1.6vw) rotate(0);
+      }
+      &.active:before{
+          -webkit-transform: translate(0, 0) rotate(-135deg);
+          transform: translate(0, 0) rotate(-135deg);
+          background-color: #0984e3;
+      }
+      &.active:after{
+          -webkit-transform: translate(0, 0) rotate(135deg);
+          transform: translate(0, 0) rotate(135deg);
+          background-color: #0984e3;
+      }
+      &.active + .sp-navi-menu{
+          display: block;
+      }
+  }
+
+  .sp-navi-menu{
+      position: fixed;
+      display: none;
+      z-index: 999;
+      width: 100vw;
+      min-height: 100vh;
+      height: 100%;
+      background: #ebebeb;
+      left: 0;
+      top: 0;
+      padding-top: 50px;
+      padding-bottom: 150px;
+      text-align: center;
+      overflow-y: auto;
+
+      .vs-collapse{
+        padding: 0;
+        text-align: left;
+        border: 1px solid #dcdcdc;
+        border-top: none;
+        position: relative;
+        border-radius: 0;
+        font-size: 3.2vw;
+        color: #000;
+
+        .vs-collapse-item{
+          header{
+            position: relative;
+            font-size: 3.2vw;
+            padding: 4vw 0;
+            padding-left: 9.6vw;
+            color: #000;
+
+            .icon-header{
+              display: none;
+            }
+
+            &:before{
+              display: block;
+              content: '';
+              position: absolute;
+              left: 4vw;
+              top: 50%;
+              width: 1.6vw;
+              height: 1.6vw;
+              border-top: 1px solid #0984e3;
+              border-right: 1px solid #0984e3;
+              transform: translateY(-50%) rotateZ(45deg);
+              transition: 0.3s;
+            }
+          }
+
+          .con-content--item{
+            padding: 0;
+            border-top: 1px solid transparent;
+            font-size: 3.2vw;
+            padding: 4vw 0;
+            padding-left: 9.6vw;
+            a{
+              color: #000;
+            }
+            &:active{
+              background-color: #ade1f5;
+            }
+          }
+
+          &.open-item{
+            header{
+              &:before{
+                transform: translateY(-50%) rotateZ(135deg);
+              }
+            }
+            .con-content--item{
+              border-color: #dcdcdc;
+            }
+          }
+        }
+
+        
+
+      }
+
+      img{
+          width: 28.4vw;/*PAC_5-1922 スマホにて小さくなるようにwidth: 38.4vw;*/
+      }
+
+      .menu-list{
+          margin: 8vw auto 0;
+          width: 78.4vw;
+          background: #fff;
+          border-top: 1px solid #dcdcdc;
+
+          > a{
+              display: block;
+              border: 1px solid #dcdcdc;
+              border-top: none;
+              position: relative;
+              font-size: 3.2vw;
+              padding: 4vw 0;
+              padding-left: 9.6vw;
+              color: #000;
+              text-align: left;
+
+              &:before{
+                  display: block;
+                  content: '';
+                  position: absolute;
+                  left: 4vw;
+                  top: 50%;
+                  width: 1.6vw;
+                  height: 1.6vw;
+                  border-top: 1px solid #0984e3;
+                  border-right: 1px solid #0984e3;
+                  transform: translateY(-50%) rotateZ(45deg);
+              }
+          }
+      }
+
+      .logout{
+          margin: 13.6vw auto 0;
+          width: 78.4vw;
+          display: block;
+          border: 1px solid #dcdcdc;
+          position: relative;
+          font-size: 3.2vw;
+          padding: 4vw 0;
+          padding-left: 6.4vw;
+          color: #000;
+          text-align: left;
+      }
+  }
+}

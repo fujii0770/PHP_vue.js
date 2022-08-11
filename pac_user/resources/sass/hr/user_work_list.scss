@@ -1,0 +1,120 @@
+.user-work-list {
+    .vx-card__body {
+        padding: 0.5em !important;
+    }
+
+    .user-work-list-main {
+        margin-top: 2em;
+
+        .block-search {
+            .search-title {
+                margin-top: 2em;
+                margin-left: 3em;
+                margin-bottom: 1em;
+                font-weight: bold;
+                font-size: 1em;
+            }
+
+            .search-content {
+                padding-top: 2em;
+                .search-content-block {
+                    display: block;
+                    width:fit-content;
+                }
+                .search-item {
+                    display: inline-block;
+                    margin-left: 0.5em;
+                    margin-right: 0.5em;
+                    .vs-input--label {
+                        font-weight: bolder;
+                        padding-left: 0;
+                    }
+                    .vs-con-input {
+                        margin-top: 0.3em;
+                        .month-picker-input {
+                            position: fixed;
+                            right: 0;
+                            top: 60px;
+                            padding-left: 15px;
+                            transition: width 0.2s ease 0s;
+                            z-index: 999;
+                            width: 100%;
+                        }
+                    }
+
+                }
+                .search-btn-block {
+                    margin-top: 1em;
+                    .btn-search {
+                        width: 8em;
+                    }
+                }
+            }
+        }
+        .block-result {
+            /*z-index: -1;*/
+            .search-result {
+                .pagination-block {
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }
+}
+
+.vs-con-input {
+    .month-picker-input[data-v-201d773d] {
+        width: 100%;
+    }
+    .month-picker__container {
+        .month-picker {
+            background-color: #ffffff;
+        }
+    }
+    .vdp-datepicker__clear-button {
+        margin-left: -8%;
+    }
+    .fa-times ~ * {
+        display: none;
+    }
+    .vdp-datepicker {
+        .vdp-datepicker__calendar {
+            z-index: 9999;
+            position: -ms-page;
+        }
+    }
+
+
+}
+
+.btn-search {
+    button {
+        width: 10em;
+    }
+}
+
+.vs-input--label {
+    font-weight: bolder;
+    .inline-calendar {
+        display: inline;
+    }
+}
+.vs-select--label {
+    font-weight: bolder;
+}
+.pr-2 {
+    padding-left: 0.5rem !important;
+}
+.selectSubmitStatus .selectApprovalStatus {
+    .vs-select--input {
+        font-size: 1.1em;
+    }
+}
+
+.width-150 {
+    width: 150px;
+}
+.width-200 {
+    width: 200px;
+}

@@ -1,0 +1,59 @@
+.circular-component {
+    .mouse-hover{
+        cursor: pointer;
+    }
+    .con-vs-card {
+        box-shadow: none;
+    }
+    .internal-detail{
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+        height: 18px;
+        img{
+            width: 18px;
+            max-height: 18px;
+        };
+        span{
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 8px;
+            white-space: nowrap;
+        };
+    }
+    .list-received{
+        .vs-table--tbody-table {
+            min-width: 100% !important;
+        }
+
+        .vs-con-table .vs-con-tbody .vs-table--tbody-table .vs-table--thead th {
+            padding: 0 !important;
+        }
+
+        .vs-con-table .vs-con-tbody .vs-table--tbody-table .tr-values .vs-table--td {
+            padding: 7px 0;
+        }
+
+        .vs-card--content {
+            padding: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    }
+    .tex-list-received{
+        white-space: normal;
+        word-break: break-all;
+    }
+    .width-date{
+        min-width: 114px;
+    }
+    .disable{
+        background-color: rgb(226, 222, 222);
+    }
+    .shachihata_image_size {
+        height: 40px !important;
+    }
+    .table-favorite-width {
+        height: 253px;
+        overflow-y: auto;
+    }
+}

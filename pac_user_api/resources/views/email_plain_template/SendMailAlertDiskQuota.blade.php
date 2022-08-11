@@ -1,0 +1,16 @@
+@extends('../layouts_plain.email')
+
+@section('content')
+まもなく、利用可能なディスク容量をオーバーします。
+不要になった回覧文書を削除してください。
+
+使用ディスク容量：
+{{$current_storage_size}}MB
+
+ディスク使用率：
+{{$current_storage_percent}}%
+
+※この電子メールの内容を他の人と共有しないでください。
+
+@endsection
+ 

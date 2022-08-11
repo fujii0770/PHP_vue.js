@@ -1,0 +1,79 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  img[src*=".svg"] {
+    width: 40px;
+  }
+  .vs-checkbox--check, .vs-checkbox--input {
+    top: 0px;
+  }
+  .numInputWrapper input {
+    width: 200px !important;
+  }
+  .vx-logo {
+    img {
+      width: 38px !important;
+      margin-right: auto !important;
+      margin: 0 auto;
+    }
+    .vx-logo-text {
+      margin-left: 10px;
+    }
+  }
+  /*.inbox-unread-num .vs-chip--text {
+    margin-left: 6px;
+  }*/
+  .inbox-unread-num{
+    padding-right: 0px !important;
+
+    .vs-chip--text{
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 1px;
+      text-align: center;
+    }
+  }
+  .con-vs-loading .vs-loading.sound {
+    width: 100%;
+  }
+  .preview-wrapper .text p {
+    font-weight: 700;
+  }
+
+  #main-home{
+    .zoom-in {
+      //margin-left: 100px;
+    }
+    .slider {
+      background: none;
+      border-radius: 0;
+      margin-top: 5px;
+    }
+
+    .slider::-ms-fill-lower {
+      background: #d3d3d3;
+    }
+    .slider::-ms-fill-upper {
+      background: #d3d3d3;
+    }
+
+    .slider::-ms-thumb {
+      background: rgba(var(--vs-primary),1);
+    }
+
+    .slider::-ms-track {
+      color: #d3d3d3;
+    }
+
+  }
+  .fade-tab-enter-active,.fade-tab-leave-active{-webkit-transition:opacity 0.7s linear;transition:opacity 0.7s linear;}
+  .fade-tab-invert-enter-active,.fade-tab-invert-leave-active{-webkit-transition:opacity 0.7s linear;transition:opacity 0.7s linear;}
+
+  #application-page {
+    .favorites {
+      .item {
+        .action {
+          width: 55px;
+        }
+      }
+    }
+  }
+}

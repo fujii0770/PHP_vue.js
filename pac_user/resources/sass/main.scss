@@ -1,0 +1,49 @@
+@import "vuexy/variables";
+
+@import "vuexy/layout";
+@import "vuexy/typography";
+@import "vuexy/misc";
+@import "vuexy/extraComponents";
+@import "vuexy/themes";
+@import "vuexy/routerAnimations";
+@import "vuexy/transitions";
+
+@import "vuexy/customClasses";
+
+// Vuesax fixes and enhancments
+@import "vuexy/fixesVuesax";
+
+// Tailwind Fixes
+@import "vuexy/tailwindFix";
+
+//Vue suggestion
+@import "suggestion";
+
+//Pages
+@import "pages/layout";
+@import "pages/home";
+@import "pages/application";
+@import "pages/stampInfo";
+@import "pages/saves";
+@import "pages/contacts";
+@import "pages/circular_destination";
+@import "pages/sendback";
+@import "pages/completed_memo";
+@import "vuexy/extraComponents/autocomplete.scss";
+@import "pages/setting";
+@import "portal/favorite";
+@import "portal/top_screen";
+@import "portal/notification";
+@import "portal/customize_area";
+@import "portal/menu_left";
+@import "portal/advertisement";
+@import "portal/movie";
+@import "portal/circular_portal";
+@import "portal/circular_component";
+@import "portal/special_portal";
+@import "portal/special_component";
+@import "portal/bbs";
+@import "portal/to_do_list";
+@import "pages/template";
+@import "hr/work_list";
+@import "pages/form_issuance";

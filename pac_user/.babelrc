@@ -1,0 +1,23 @@
+{
+    "plugins": [
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-class-properties",
+        "syntax-dynamic-import"
+    ],
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "debug": true,
+                "targets": {
+                    "chrome": 69,
+                    "firefox": 62,
+                    "edge": 17,
+                    "ie":9
+                },
+                "useBuiltIns": "usage"
+            }
+        ],
+        [ "@vue/app", { "useBuiltIns": "entry" } ]
+    ]
+}

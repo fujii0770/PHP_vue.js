@@ -1,0 +1,62 @@
+.comp-portal-movie{
+    width: 100%;
+    height: 100%;
+    .vx-card__body {
+        background-color: #F8F8F8!important;
+        text-align: right;
+        padding: 8px 0 0 0 !important;
+        border: 2px solid #F8F8F8;
+    }
+    .movie-box {
+      display: flex;
+      flex-flow: nowrap;
+      -ms-flex-flow: nowrap;
+      justify-content: space-between;
+
+      .movie-item {
+        width: 210px!important;
+
+        .theme-title {
+          width: 210px;
+          text-align: center;
+          color: #FFFFFF;
+          background: #002060;
+          line-height: 36px;
+          border-radius: 5px;
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+        }
+        .title {
+          width: 210px;
+          text-align: center;
+          color: #FFFFFF;
+          background: #000000;
+          line-height: 36px;
+          border-radius: 5px;
+          font-size: 1rem;
+          margin-bottom: 5px;
+        }
+        > div:nth-child(3) {
+          width: 210px;
+          height: 210px;
+          background: #EFEFEF;
+        }
+      }
+    }
+    .other-movie {
+      display: inline;
+      cursor: pointer;
+    }
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 30px;
+    }
+    .over-text {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    border-left: 0;
+    position: relative;
+}

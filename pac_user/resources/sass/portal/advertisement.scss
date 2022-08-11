@@ -1,0 +1,25 @@
+.comp-portal-advertisement {
+  .vx-card__body {
+    padding: 0.5rem !important;
+  }
+
+  .vx-card {
+    background-color: #f8f8f8;
+    .vx-card__collapsible-content {
+      .swiper-zoom-container {
+        position: relative;
+        img {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  border-left: 0;
+  position: relative;
+}

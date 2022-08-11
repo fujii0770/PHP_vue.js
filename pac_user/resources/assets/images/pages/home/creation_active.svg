@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="19.969" viewBox="0 0 18 19.969">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="シェイプ_2" data-name="シェイプ 2" class="cls-1" d="M44.414,157l10.142-10.142-1.414-1.414L43,155.586V157h1.414Zm0.829,2H41v-4.243l11.435-11.435a1,1,0,0,1,1.414,0l2.829,2.829a1,1,0,0,1,0,1.414ZM41,161H59v2H41v-2Z" transform="translate(-41 -143.031)"/>
+</svg>

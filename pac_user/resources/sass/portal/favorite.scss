@@ -1,0 +1,126 @@
+.comp-portal-favorite{
+
+    // .list-favorite {
+    //     border: solid 1px black;
+    //     padding: 5px;
+    // }
+
+    .item-favorite{        
+        margin-top: 10px;
+        // background-color: rgb(156, 221, 252);
+        border: solid 1px black;
+        padding: 5px;
+        position: relative;
+    }
+    .service-name{
+        // display: flex;
+        // align-items: center;
+        span{
+            font-weight: bold;
+            color: black;
+            white-space: normal;
+            word-break: break-all;
+        }
+    }
+    .service-logo{
+        // padding: 10px 25px 10px 15px;
+        padding: 10px 15px;
+        img{
+            max-width: 100%;
+            height: 40px !important;
+        }
+    }
+    .service-logo-external{
+
+    }
+    .delete-service{
+        position: absolute; 
+        right: 2px;
+        span{
+            background-color: #fa435e;
+            padding: 0 5px 4px 5px;
+        }
+    }
+
+    .form-add-favorite{
+        border: dashed 3px gray;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+    }
+
+    .border-modal-add-favorite{
+        margin: -1rem 1rem;
+        border: solid 1px gray;
+    }
+
+    .favorite-internal{
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+    }
+
+    .internal-detail{
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        // justify-content: flex-end;
+        margin: 5px 0;
+        img{
+            width: 6%;
+        };
+        span{
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 8px;
+        };
+    }
+    .width-date{
+        min-width: 114px;
+    }
+    
+    .tex-list-received{
+        white-space: normal;
+        word-break: break-all; 
+    }
+
+    .custome-event{
+        min-width: 100% !important;
+    }
+
+    .list-received{
+        .vs-table--tbody-table {
+            min-width: 100% !important;
+        }
+
+        .vs-con-table .vs-con-tbody .vs-table--tbody-table .vs-table--thead th {
+            padding: 0 !important;
+        }
+
+        .vs-con-table .vs-con-tbody .vs-table--tbody-table .tr-values .vs-table--td {
+            padding: 7px 0;
+            // padding: 7px 20px 7px 0;
+        }
+
+        .vs-card--content {
+            padding: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .vx-card .vx-card__collapsible-content .vx-card__body {
+        padding: 10px;
+    }
+
+    .mouse-hover{
+        cursor: pointer;
+    }
+
+    .disable{
+        background-color: rgb(226, 222, 222);
+    }
+    .vs-tabs--li {
+      white-space: nowrap;
+    }
+}

@@ -1,0 +1,38 @@
+:root{
+  --avatar-radius:50%;
+}
+
+.rc-scrollbars-track.rc-scrollbars-track-v{
+width:12px!important;
+}
+
+.rc-scrollbars-thumb.rc-scrollbars-thumb-v{
+    background-color:#0371b5!important; 
+}
+
+.rcx-box.rcx-box--full.rcx-box--animated.rcx-button--small-square.rcx-button--square.rcx-button--small.rcx-button--ghost.rcx-button.rcx-button-group__item.rcx-css-ue04py{
+  background-color:#EBEFF4!important;
+}
+
+.sidebar--custom-colors{
+  --rcx-button-colors-ghost-border-color:#EBEFF4!important;
+  --rcx-sidebar-item-color-highlighted:#0371b5!important;
+  --rcx-color-neutral-200:#EBEFF4!important;
+}
+
+.rcx-sidebar{
+  background-color:#EBEFF4!important;
+}
+
+.rc-old.full-page.color-tertiary-font-color{
+ background-color:#FFFFFF!important;
+ --tertiary-font-color:#050505!important;
+}
+
+.content-background-color.color-primary-font-color{
+  background-color:#EBEFF4!important;
+}
+
+.rcx-modal__inner{
+  background-color:#EBEFF4!important;
+}

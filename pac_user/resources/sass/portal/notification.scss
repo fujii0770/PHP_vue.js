@@ -1,0 +1,77 @@
+.comp-portal-notification{
+    width: 100%;
+    height: 100%;
+    .vx-card__body {
+        padding: 0.5rem !important;
+    }
+    .w-long {
+        width: 200px;
+        height: 20px;
+        font-size: 10px;
+        padding: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .w-short {
+        width: 50px;
+        height: 20px;
+        font-size: 10px;
+        padding: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .list-notification{
+        .vs-table--tbody-table {
+            min-width: 100% !important;
+        }
+    }
+
+    .w-200 {
+        width: 200px;
+        padding-right: 0 !important;
+    }
+
+    .w-200 span {
+        display: block;
+        width: 185px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .w-62 {
+        width: 62px;
+        padding-right: 0 !important;
+    }
+
+    .con-ul-tabs {
+        padding-bottom: 7.61px;
+    }
+
+    .h-45 {
+        height: 45px;
+    }
+
+    .w-40 {
+      width: 40px;
+      padding-right: 0 !important;
+    }
+
+    .w-310 {
+      width: 310px;
+      padding-right: 0 !important;
+    }
+
+    .w-310 > span {
+        /* PAC_5-2802 お知らせ・リリース情報を改行されないように「...」で表示する S*/
+        /*width: 200px;*/
+        display: block;
+        width: 342px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        /* PAC_5-2802 お知らせ・リリース情報を改行されないように「...」で表示する E*/
+    }
+}

@@ -1,0 +1,153 @@
+﻿@charset "UTF-8";
+
+body {
+  background: white;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#loginbox {
+  padding-top: 30px;
+  margin: 0 auto;
+  max-width:310px;
+  margin-bottom: 30px;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.side-login {
+  padding: 0.7em ;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  form.loginform {
+    max-width: 310px;
+    
+    input {
+      margin: 0 0 12px 0;
+    }
+    
+    .input-password {
+      ime-mode:disabled;
+    }
+
+    label {
+      color: gray;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    
+    #loginbtn {
+      margin: 20px 0 0 0;
+    }
+  }
+    #login-password-reset {
+        float: right;
+        margin-top: 5px;
+        font-size: smaller;
+    }
+
+  p {
+    color: gray;
+    font-weight: 700;
+  }
+
+  #resend {
+    float: right;
+    margin-top: 5px;
+    font-size:smaller;
+  }
+}
+
+.header-login {
+    height: 56px; width : 100%; background-color: #107FCD; z-index:999;
+}
+
+.header-login .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 7px 15px 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+img {
+    max-height: 43.5px;
+    width: auto;
+}
+
+#user-new-login {
+    #rightbox {
+        padding-top: 30px;
+        margin: 0 auto;
+        max-width: 310px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        input.form-control {
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+
+        }
+        .side-login form.loginform input::placeholder {color: #acacac !important;}
+        .side-login form.loginform input::-webkit-input-placeholder {color: #acacac !important;}
+        .side-login form.loginform input::-moz-placeholder {color: #acacac !important;}
+        .side-login form.loginform input:-ms-input-placeholder {color: #acacac !important;}
+        .side-login form.loginform input::-ms-input-placeholder {color: #acacac !important;}
+        .side-login form.loginform input::placeholder {color: #acacac !important;}
+        .loginform-emailformError {
+            z-index: 1000;
+        }
+
+    }
+
+    #rightbox .modal-content { width: 600px !important; margin: 30px auto; }
+    #rightbox .modal-dialog .btn-default {
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+    }
+
+    #rightbox .btn-primary {
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    #rightbox .modal-dialog .btn-default:hover {
+        color: #333;
+        background-color: #e6e6e6;
+        border-color: #adadad;
+    }
+
+    .guide-signup {
+        margin-top: 20px;
+        padding: 1.5em .5em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .footer {
+        width: 100%;
+        height: 24px;
+        background-color: #0092d6;
+        color: #fff;
+        font-size: 10px;
+        position: fixed;
+        bottom: 0;
+        line-height: 24px;
+        padding-right: 12px;
+
+        .footer-text {
+            float: right;
+            margin-right: 24px;
+        }
+        .footer-text a {
+            color: #fff;
+        }
+    }
+}

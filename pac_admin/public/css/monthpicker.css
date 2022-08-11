@@ -1,0 +1,63 @@
+.monthpicker {
+    border: 1px solid #c5c5c5;
+    padding: .2em .2em 0;
+    z-index: 1000;
+    background: #fff;
+}
+
+.monthpicker .years {
+    background-color: #e9e9e9;
+    padding: .2em 0;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.monthpicker .years select {
+    font-size: 1em;
+    width: 100%;
+}
+
+.monthpicker .years select:focus {
+    outline: none;
+}
+
+.monthpicker table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: .4em 0;
+}
+
+.monthpicker td {
+    padding: .1em;
+}
+
+.monthpicker table button {
+    width: 100%;
+    font-size: 1em;
+    padding: .8em;
+    cursor: pointer;
+    transition: background .2s;
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+}
+
+.monthpicker table button:hover {
+    background: #ededed;
+}
+
+.monthpicker table button:focus {
+    outline: none;
+}
+
+.monthpicker table button.curr,
+.monthpicker table button.curr:hover {
+    background: #007fff;
+    color: #fff;
+}
+
+.monthpicker table button.nowMonth,
+.monthpicker table button.nowMonth:hover {
+    background: #fffa90;
+}

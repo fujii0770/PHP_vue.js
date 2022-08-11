@@ -1,0 +1,56 @@
+body {
+  background: white;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#loginbox {
+  padding-top: 30px;
+  margin: 0 auto;
+  max-width: 310px;
+  margin-bottom: 30px;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.side-login {
+  padding: 0.7em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.side-login form.loginform {
+  max-width: 310px;
+}
+
+.side-login form.loginform input {
+  margin: 0 0 12px 0;
+}
+
+.side-login form.loginform .input-password {
+  ime-mode: disabled;
+}
+
+.side-login form.loginform label {
+  color: gray;
+  font-weight: 700;
+}
+
+.side-login form.loginform #loginbtn {
+  margin: 20px 0 0 0;
+}
+
+.side-login p {
+  color: gray;
+  font-weight: 700;
+}
+
+.side-login #resend {
+  float: right;
+  margin-top: 5px;
+  font-size: smaller;
+}
+

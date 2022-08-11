@@ -1,0 +1,34 @@
+.form-issuance-page {
+  .tools.fields {
+    .body {
+      overflow: auto;
+      height: calc(100% - 180px);
+    }
+    .footer {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        padding: .75rem 3rem !important;
+      }
+    }
+    .header {
+      height: 120px;
+    }
+    .form-item {
+      label {
+        margin-right: 10px;
+        color: #000;
+        font-size: 16px;
+      }
+      .vs-input {
+      }
+    }
+  }
+  .tools .flatpickr-input {
+    visibility: visible !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    color: #626262 !important;
+  }
+}

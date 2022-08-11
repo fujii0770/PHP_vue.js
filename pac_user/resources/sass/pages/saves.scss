@@ -1,0 +1,117 @@
+#saves-list-page {
+  .vs-input--label {
+    font-weight: bold;
+    padding-left: 0px;
+  }
+  .vs-con-input {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-device-width: 480px) {
+  #sends-page {
+    .vs-input--label, .vs-select--label {
+      font-weight: bold;
+      padding-left: 0px;
+    }
+
+    .vs-con-input, .input-select-con {
+      margin-top: 5px;
+    }
+
+    .preview-wrapper {
+      position: fixed;
+      right: 0;
+      top: 60px;
+      padding-left: 15px;
+      transition: width 0.2s ease 0s;
+      z-index: 999;
+
+      .show-flex {
+        margin-left: 10px;
+        -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .1);
+        -webkit-transition: all .3s ease;
+      }
+
+      .con-vs-card {
+        box-shadow: none;
+      }
+
+      .break {
+        border-radius: 10px;
+        background: rgba(var(--vs-primary), .4);
+        height: 5px;
+        width: 100%;
+      }
+    }
+  }
+  #sends-page-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #sends-page {
+    display: none;
+  }
+  //  受信一覧、完了一覧
+  #sends-page-mobile {
+    display: block;
+    top: -60px;
+
+    .sends-mobile-title{
+      text-align:center;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .sends-mobile-select-panel{
+      padding:auto 0;
+    }
+    .sends-mobile-select-button{
+      margin-left:auto;
+    }
+    .square{
+      width:100%;
+    }
+    .send-time{
+      width:120px;
+    }
+
+    // 円
+    .circle{
+      border: 1.5px solid #1E90FF;
+      color: #1E90FF;
+      font-size: 16px;
+      border-radius: 100%;
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      line-height: 60px;
+      background-color: #FFF;
+      text-align: center;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    .select-panel{
+      font-size: 12px;
+      font-family: "NotoSansJP";
+      color: rgb(0, 0, 0);
+    }
+    .custome-event{
+      table{
+        min-width: 100%!important;
+      }
+    }
+    .show-list{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+

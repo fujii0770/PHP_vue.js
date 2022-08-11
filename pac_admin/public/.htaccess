@@ -1,0 +1,38 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+    RewriteEngine On
+    RewriteBase /admin/
+    SetEnvIf User-Agent "Googlebot" denybot
+    SetEnvIf User-Agent "Slurp" denybot
+    SetEnvIf User-Agent "bingbot" denybot
+    SetEnvIf User-Agent "msnbot" denybot
+    SetEnvIf User-Agent "Yandex" denybot
+    SetEnvIf User-Agent "DuckDuckBot" denybot
+    SetEnvIf User-Agent "Mappy" denybot
+    SetEnvIf User-Agent "proximic" denybot
+    SetEnvIf User-Agent "Twitterbot" denybot
+    SetEnvIf User-Agent "applebot" denybot
+    SetEnvIf User-Agent "blogmuraBot" denybot
+    SetEnvIf User-Agent "SemrushBot" denybot
+    SetEnvIf User-Agent "AhrefsBot" denybot
+    SetEnvIf User-Agent "BLEXBot" denybot
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+php_value memory_limit 1024M
+order Allow,Deny
+Allow from all
+Deny from env=denybot

@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "77D334VTBF.jp.co.shachihata.bizcard.test",
+        "paths": ["/app/site/approval/*"]
+      },
+      {
+        "appID": "77D334VTBF.jp.co.shachihata.bizcard.test.vmt",
+        "paths": ["/app/site/approval/*"]
+      },
+      {
+        "appID": "77D334VTBF.com.shinpac.jp",
+        "paths": ["/app/site/approval/*"]
+      }
+    ]
+  }
+}

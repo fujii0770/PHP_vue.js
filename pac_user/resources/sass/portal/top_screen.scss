@@ -1,0 +1,40 @@
+.comp-portal-announces{
+    .vx-card__body {
+        padding: 0px 1rem 0.5rem !important;
+    }
+    .vx-card {
+        border-top-right-radius: unset;
+        border-top-left-radius: unset;
+    }
+    .notice {
+        background-color: lightgoldenrodyellow;
+        padding-left: 1.5rem;
+        font-weight: bold;
+    }
+    .resize-text {
+        font-size: 10px;
+    }
+    .resize-image {
+        width: 10px;
+        height: 10px;
+    }
+    .noti-big-size {
+        font-size: 20px;
+        color: #107fcd;
+        font-weight: 700;
+    }
+    .noti-small-size {
+        position: relative;
+        vertical-align: baseline;
+        top: 1.5em;
+        left: 0.3em;
+        font-size: 8px;
+    }
+    .last-login-font-size {
+        font-size: 14px;
+        width: 100%;
+        position: relative;
+        top: 57%;
+        text-align: right;
+    }
+}

@@ -1,0 +1,232 @@
+/*
+  ##Device = Desktops
+  ##Screen = 1446px to higher resolution desktops
+*/
+
+@media (min-width: 1446px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1281px to 1445px
+*/
+
+@media (min-width: 1281px) and (max-width: 1445px) {
+  #main-home {
+    .tools {
+      .stamp-list.isEdit {
+         max-height: 220px;
+      }
+        .is-approval {
+            .histories,.comments,.mail-list  {
+                height: calc(100vh - 230px);
+                overflow-x: hidden;
+                overflow-y: auto;
+                -ms-overflow-y: auto;
+                -ms-overflow-x: hidden;
+            }
+        }
+
+      .stamp-text .stamp-item {
+        padding: 0;
+      }
+
+    }
+    .vs-button:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large) {
+      padding: .75rem 1rem;
+    }
+    .breadcrumb li p {
+      font-size: 13px;
+    }
+    .work-content .title, .work-content.isEdit .title {
+      font-size: 18px;
+      padding: 8px 10px 2px;
+    }
+    .work-content .title:nth-child(1), .work-content.isEdit .title:nth-child(1) {
+      padding-top: 0 !important;
+    }
+
+  }
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #main-home {
+    .tools {
+      .stamp-list.isEdit {
+         max-height: 220px;
+      }
+        .is-approval {
+            .histories,.comments,.mail-list  {
+                height: calc(100vh - 230px);
+                overflow-x: hidden;
+                overflow-y: auto;
+                -ms-overflow-y: auto;
+                -ms-overflow-x: hidden;
+            }
+        }
+      .flatpickr-mobile {visibility: hidden;position: absolute;z-index: 1}
+
+      .stamp-text .stamp-item {
+        padding: 0;
+      }
+      .mail-list {
+        font-size: 13px;
+        .item{
+          font-size: 12px;
+        }
+      }
+
+    }
+    .vs-button:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large) {
+      padding: .75rem 0.5rem;
+    }
+    .breadcrumb li p {
+      font-size: 13px;
+    }
+    .work-content .title, .work-content.isEdit .title {
+      font-size: 15px;
+      padding: 8px 10px 2px;
+    }
+    .work-content .title:nth-child(1), .work-content.isEdit .title:nth-child(1) {
+      padding-top: 0 !important;
+    }
+
+  }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #sendback-page,#circular-destination-page {
+    .top-bar {
+      .vs-col:first-child {
+        justify-content: flex-start !important;
+        padding-left: 0.8rem;
+      }
+
+    }
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  #sends-page {
+    .preview-wrapper {
+      padding-left: 0;
+      .show-flex {
+        margin-left: 0;
+      }
+    }
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #sends-page {
+    .preview-wrapper {
+      padding-left: 0;
+      .show-flex {
+        margin-left: 0;
+      }
+    }
+  }
+
+  #circular-destination-page {
+    .top-bar {
+      .vs-col {
+        /*justify-content: flex-start !important;*/
+      }
+    }
+  }
+
+
+}
+
+@media (max-height: 800px) {
+  #main-home {
+    .tools {
+      .stamp-list.isEdit {
+        max-height: 220px;
+      }
+        .is-approval {
+            .histories,.comments,.mail-list  {
+                height: calc(100vh - 230px);
+                overflow-x: hidden;
+                overflow-y: auto;
+                -ms-overflow-y: auto;
+                -ms-overflow-x: hidden;
+            }
+        }
+
+      .stamp-text .stamp-item {
+        padding: 0;
+      }
+
+    }
+    .vs-button:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large) {
+      padding: .75rem 0.5rem;
+    }
+    .breadcrumb li p {
+      font-size: 13px;
+    }
+    .work-content .title, .work-content.isEdit .title {
+      font-size: 18px;
+      padding: 8px 10px 2px;
+    }
+    .work-content .title:nth-child(1), .work-content.isEdit .title:nth-child(1) {
+      padding-top: 0 !important;
+    }
+
+  }
+  #circular-destination-page, #application-page{
+    .vs-button:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large) {
+      padding: .75rem 1rem;
+    }
+  }
+}
+
+@media ( max-width: 240px ){
+  .vs-card--content{
+    display: inline-block;
+    width: 100%;
+  }
+  .v--modal{
+    width: 90% !important;
+    left: 5% !important;
+  }
+}

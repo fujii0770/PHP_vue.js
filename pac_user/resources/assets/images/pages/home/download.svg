@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0984e3;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="シェイプ_45" data-name="シェイプ 45" class="cls-1" d="M877.887,87.5h2.666L877,90.9l-3.555-3.4h2.666V84.1h1.778v3.4Zm1.777-6.8h-8.887V94.3h12.442V84.1h-3.555V80.7ZM869,79.843A0.866,0.866,0,0,1,869.888,79h10.665L885,83.25V95.144a0.87,0.87,0,0,1-.883.856H869.882A0.87,0.87,0,0,1,869,95.157V79.843Z" transform="translate(-869 -79)"/>
+</svg>

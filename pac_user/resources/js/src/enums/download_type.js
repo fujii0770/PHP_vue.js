@@ -1,0 +1,8 @@
+export const DOWNLOAD_TYPE = {
+    COMPLETED_DOWNLOAD_RESERVE: 1,//完了一覧で予約
+    LONG_TERM_DOWNLOAD_RESERVE: 2,//長期保管で予約
+    FORM_ISSUANCE_DOWNLOAD_RESERVE: 3,//帳票一覧で予約
+    VIEWING_CIRCULAR_DOWNLOAD_RESERVE: 4,//閲覧一覧で予約
+    TEMPLATE_CSV_DOWNLOAD_RESERVE: 5,//回覧完了テンプレート一覧で予約
+    DOWNLOAD_FILE: 6,//ダウンロード状況でダウンロード
+};

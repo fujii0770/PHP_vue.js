@@ -1,0 +1,51 @@
+.comp-portal-customize{
+  .vx-card__body {
+    background-color: #F8F8F8!important;
+    text-align: right;
+    padding: 0 !important;
+    border: 2px solid #F8F8F8;
+  }
+  .vx-card {
+    width: 450px;
+  }
+  .customize-box {
+    display: flex;
+    flex-flow: nowrap;
+    -ms-flex-flow: nowrap;
+    justify-content: space-between;
+
+    .customize-item {
+      width: 210px!important;
+      min-height: 210px;
+      background: #FFF;
+      .area-title {
+        text-align: center;
+        margin: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .notice-list {
+        height: 145px;
+      }
+      .notice-item {
+        cursor: pointer;
+        text-align: left;
+        margin: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        span {
+          cursor: pointer;
+          color: #0079cf;
+        }
+      }
+    }
+  }
+  border-left: 0;
+  position: relative;
+}

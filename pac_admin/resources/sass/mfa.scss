@@ -1,0 +1,57 @@
+﻿@charset "UTF-8";
+
+body {
+  background: white;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#loginbox {
+  padding-top: 30px;
+  margin: 0 auto;
+  max-width:310px;
+  margin-bottom: 30px;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.side-login {
+  padding: 0.7em ;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  form.loginform {
+    max-width: 310px;
+    
+    input {
+      margin: 0 0 12px 0;
+    }
+    
+    .input-password {
+      ime-mode:disabled;
+    }
+
+    label {
+      color: gray;
+      font-weight: 700;
+    }
+    
+    #loginbtn {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  p {
+    color: gray;
+    font-weight: 700;
+  }
+
+  #resend {
+    float: right;
+    margin-top: 5px;
+    font-size:smaller;
+  }
+}
